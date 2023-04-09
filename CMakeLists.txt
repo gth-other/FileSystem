@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.24)
+project(FileSystem)
+set(CMAKE_CXX_STANDARD 17)
+add_definitions(-Werror)
+add_definitions(-O3)
+add_definitions(-flto)
+add_executable(FileSystem src/main.cpp src/Entry.hpp src/Entry.cpp src/Disk.hpp src/Disk.cpp)
